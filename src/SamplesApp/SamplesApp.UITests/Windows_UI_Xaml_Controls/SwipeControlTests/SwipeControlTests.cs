@@ -87,7 +87,7 @@ namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.SwipeControlTests
 			Run(testName, skipInitialScreenshot: true);
 
 			var sutPhyRect = _app.GetPhysicalRect(sut);
-			var item2PhyPosition = new Point((int)sutPhyRect.X + 150, (int)sutPhyRect.Y + 150).LogicalToPhysicalPixels(_app);
+			var item2PhyPosition = new Point((int)sutPhyRect.CenterX, (int)sutPhyRect.Y + 150).LogicalToPhysicalPixels(_app);
 
 			// Validate initial state
 			var initial = TakeScreenshot("initial");
