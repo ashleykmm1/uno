@@ -225,5 +225,10 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 
 		private protected static VirtualKeyModifiers GetKeyboardModifiers() => CoreImports.Input_GetKeyboardModifiers();
+
+		private protected void EnsureValidationVisuals()
+		{
+			// TODO Uno: Not supported yet.
+		}
 	}
 }
